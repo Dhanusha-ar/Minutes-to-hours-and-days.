@@ -1,0 +1,14 @@
+package com.minutes;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter the minutes to find years and days:");
+		int minutes=input.nextInt();
+		int year=minutes/365/24/60;
+		int day=minutes/24/60%365;
+		System.out.println("years="+year+" days="+day);
+	}
+}
